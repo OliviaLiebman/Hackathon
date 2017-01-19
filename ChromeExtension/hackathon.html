@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type ="text/css" href ="hackathon.css"/>
+    <title>Brain.io</title>
+    <script src="hackathon.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <img src="Images/brainio_final.png" alt="Brain.io" class="Brainio_title centered">
+
+    <span class="centered get_font suggestions_title" >Suggestions for you:</span>
+    <div class="container">
+        <div class="row row_border">
+            <h5 class="centered get_font">Learning Python 101</h5>
+            <p class="get_font give_padding">Porphyrii Isagogen et Aristotelis categorias commentaria. </p>
+        </div>
+        <div class="row row_border">
+            <h5 class="centered get_font">Let's code together</h5>
+            <p class="get_font give_padding">Porphyrii Isagogen et Aristotelis categorias commentaria. </p>
+        </div>
+        <div class="row row_border" id="third">
+            <h5 class="centered get_font">Python for beginners</h5>
+            <p class="get_font give_padding">Porphyrii Isagogen et Aristotelis categorias commentaria. </p>
+            <img src="Images/arrowup.png" alt="more images" class="arrow" id="arrUpArticles">
+        </div>
+        <img src="Images/arrow.jpg" alt="more images" class="arrow" id="arrDownArticles">
+
+
+    </div>
+
+
+        <div id="videos">
+            <h5 class="centered get_font">Relevant videos</h5>
+            <!--<img src="" alt="see more">-->
+
+            <div id="Video1" >
+                 <!--video 1-->
+                <iframe  src="https://www.youtube.com/embed/f6ji-QcOo_U" frameborder="0" allowfullscreen class="video"></iframe>
+            </div>
+            <div id="Video2">
+                <!--video 2-->
+                <iframe  src="https://www.youtube.com/embed/ZDa-Z5JzLYM" frameborder="0" allowfullscreen class="video"></iframe>
+            </div>
+            <div id="Video3">
+                <!--video 3-->
+                <iframe src="https://www.youtube.com/embed/mrhccLHtyN4" frameborder="0" allowfullscreen class="video"></iframe>
+            </div>
+            <img src="Images/arrow.jpg" alt="more images" class="arrow" id="arr1">
+        </div>
+        <div id="more_videos">
+            <div id="Video4">
+                <!--video 4-->
+                <iframe src="https://www.youtube.com/embed/AaIdperUu-A" frameborder="0" allowfullscreen class="video"> </iframe>
+                <img src="Images/arrowup.png" alt="more images" class="arrow" id="arr2">
+            </div>
+        </div>
+
+
+
+        <div id="usersGrades"></div>
+        <div id="give_a_grade"></div>
+    </div>
+    <div class="row row_border ">
+        <div class="row">
+            <div class="col-xs-4">
+                <img src="Images/Python1.png" alt="Brain.io" class="centered field_expert_img">
+            </div>
+            <div class="col-xs-4">
+                <img src="Images/Python2.png" alt="Brain.io" class="centered field_expert_img">
+            </div>
+            <div class="col-xs-4">
+                <img src="Images/Python3.png" alt="Brain.io" class="centered field_expert_img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <img src="Images/Python4.png" alt="Brain.io" class="centered field_expert_img">
+            </div>
+            <div class="col-xs-4">
+                <img src="Images/Python5.png" alt="Brain.io" class="centered field_expert_img">
+            </div>
+            <div class="col-xs-4">
+                <img src="Images/Python6.png" alt="Brain.io" class="centered field_expert_img">
+            </div>
+        </div>
+    </div>
+
+    <div id="grade">
+        <span class="centered get_font suggestions_title" >Give your grade </span>
+        <div class="stars-holder">
+            <i class="fa fa-star star" data-rating="5"></i>
+            <i class="fa fa-star star" data-rating="4"></i>
+            <i class="fa fa-star star" data-rating="3"></i>
+            <i class="fa fa-star star" data-rating="2"></i>
+            <i class="fa fa-star star" data-rating="1"></i>
+        </div>
+        <button type="button" class="btn btn-primary" id="btn" onclick="document.getElementsByClassName('star').style.color = 'red'">Send</button>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>
